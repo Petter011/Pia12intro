@@ -7,17 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    var minsiffra = 0
+    private var minsiffra = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        var mintext = findViewById<TextView>(R.id.textView)
+        val mintext = findViewById<TextView>(R.id.textView)
         mintext.text = "Banan"
 
-        var minknapp = findViewById<Button>(R.id.button)
+        val minknapp = findViewById<Button>(R.id.button)
         minknapp.setOnClickListener {
 
             minsiffra += 1
